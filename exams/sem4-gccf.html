@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>semester 4 - gccf</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="overlay">
+
+<button class="back-btn" onclick="history.back()">⬅ Back</button>
+
+<h1>semester 4 - Google Cloud Computing Foundation Program</h1>
+
+<!-- ===== YEAR 2024 ===== -->
+<h2 class="year-title">📘 2024</h2>
+
+<div class="card">
+  <a href="PASTE_2024_INSEM1_LINK">
+    Insem 1
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2024_INSEM2_LINK">
+    Insem 2
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2024_ENDSEM_LINK">
+    End Semester
+  </a>
+</div>
+
+<!-- ===== YEAR 2025 ===== -->
+<h2 class="year-title">📗 2025</h2>
+
+<div class="card">
+  <a href="PASTE_2025_INSEM1_LINK">
+    Insem 1
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2025_INSEM2_LINK">
+    Insem 2
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2025_ENDSEM_LINK">
+    End Semester
+  </a>
+</div>
+
+<!-- ===== YEAR 2026 ===== -->
+<h2 class="year-title">📕 2026</h2>
+
+<div class="card">
+  <a href="PASTE_2026_INSEM1_LINK">
+    Insem 1
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2026_INSEM2_LINK">
+    Insem 2
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2026_ENDSEM_LINK">
+    End Semester
+  </a>
+</div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const sem = params.get("sem");
+const sub = params.get("sub");
+
+document.getElementById("heading").innerText =
+  "Semester " + sem + " – " + sub;
+</script>
+
+</div>
+</body>
+</html>

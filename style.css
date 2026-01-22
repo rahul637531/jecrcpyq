@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url("jecrc.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  min-height: 100vh;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* header */
+.top-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 18px;
+}
+.insta-link{
+  text-decoration:none;
+  font-weight:bold;
+  color:#e1306c;
+}
+.profile{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+}
+.profile img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+.profile span{
+  font-size:13px;
+  font-weight:bold;
+}
+
+.profile-card{
+  position:fixed;
+  top:70px;
+  right:20px;
+  background:white;
+  padding:15px;
+  width:220px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.25);
+  display:none;
+  z-index:999;
+}
+
+/* buttons */
+.back-btn{
+  margin:15px;
+  padding:8px 16px;
+  border:none;
+  border-radius:20px;
+  background:#444;
+  color:white;
+  cursor:pointer;
+}
+
+h1{
+  padding:20px 10px;
+}
+.year-title{
+  margin-top:30px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* cards */
+.card{
+  width:320px;
+  margin:18px auto;
+  padding:16px;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.3);
+  box-shadow:0 8px 30px rgba(0,0,0,0.25);
+  transition:all .35s ease;
+}
+.card a{
+  text-decoration:none;
+  color:#111;
+  font-size:17px;
+  font-weight:600;
+  display:block;
+}
+.card:hover{
+  transform:translateY(-6px) scale(1.03);
+  background:rgba(255,255,255,0.45);
+}
+.card:hover a{
+  color:#2563eb;
+}
+.card:active{
+  transform:scale(.96);
+}
+.copy-btn {
+  padding: 10px 18px;
+  background: #007aff;          /* iOS blue */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.copy-btn:hover {
+  background: #005ecb;
+}

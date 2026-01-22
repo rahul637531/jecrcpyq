@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subjects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay">
+
+<button class="back-btn" onclick="history.back()">⬅ Back</button>
+
+<h1 id="title"></h1>
+<div id="subjectList"></div>
+
+<script>
+/* Get semester number */
+const params = new URLSearchParams(window.location.search);
+const sem = params.get("sem");
+
+/* Semester-wise subject data */
+const subjects = {
+  1: [
+    ["Computer Programming and Logical Thinking", "exams/sem1-cplt.html"],
+    ["Engineering Mathematics I", "exams/sem1-math1.html"],
+    ["Communication Skills", "exams/sem1-comm.html"],
+    ["Engineering Chemistry", "exams/sem1-chem.html"],
+    ["Environment Science", "exams/sem1-evs.html"]
+  ],
+  2: [
+    ["Indian Constitution", "exams/sem2-constitution.html"],
+    ["Applied Physics", "exams/sem2-physics.html"],
+    ["Engineering Mathematics II", "exams/sem2-math2.html"],
+    ["Professional Skills", "exams/sem2-professional.html"],
+    ["Basics Electrical and Electronics Engineering", "exams/sem2-beee.html"],
+    ["Computer Programming in C++", "exams/sem2-cpp.html"]
+  ],
+  3: [
+    ["Computer Network", "exams/sem3-cn.html"],
+    ["Computer Organisation and Design", "exams/sem3-cod.html"],
+    ["Data Structure and Algorithms", "exams/sem3-dsa.html"],
+    ["Life Skills II", "exams/sem3-ls2.html"],
+    ["Operating System", "exams/sem3-os.html"],
+    ["Software Engineering and Project Management", "exams/sem3-sepm.html"]
+  ],
+  4: [
+    ["Discrete Mathematics", "exams/sem4-dm.html"],
+    ["Database Management System", "exams/sem4-dbms.html"],
+    ["Programming with Python", "exams/sem4-python.html"],
+    ["Google Cloud Computing Foundation Program", "exams/sem4-gcp.html"],
+    ["Salesforce", "exams/sem4-salesforce.html"]
+  ]
+};
+
+/* Set page title */
+document.getElementById("title").innerText =
+  "Semester " + sem + " Subjects";
+
+/* Show only selected semester subjects */
+const list = document.getElementById("subjectList");
+
+if (subjects[sem]) {
+  subjects[sem].forEach(item => {
+    list.innerHTML += `
+      <div class="card">
+        <a href="${item[1]}">${item[0]}</a>
+      </div>
+    `;
+  });
+} else {
+  list.innerHTML = "<p>No subjects available</p>";
+}
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay">
+    <script>
+function toggleProfile() {
+  const card = document.getElementById("profileCard");
+  card.style.display =
+    card.style.display === "block" ? "none" : "block";
+}
+</script>
+<!-- ===== TOP HEADER ===== -->
+<div class="top-bar">
+
+  
+  
+  <!-- Right side : Profile -->
+  <div class="profile" onclick="toggleProfile()">
+    <img src="me.jpeg" alt="My Photo">
+    <span>Made by Rahul</span>
+  </div>
+
+</div>
+
+<!-- ===== PROFILE POPUP CARD ===== -->
+<div id="profileCard" class="profile-card">
+  <h3>Rahul</h3>
+
+  <p>
+    📸 Instagram :
+    <a href="https://www.instagram.com/rahul__rk__6375" target="_blank">
+      @rahul__rk__6375
+    </a>
+  </p>
+
+  <p>
+    💼 LinkedIn :
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank">
+      View Profile
+    </a>
+  </p>
+</div>
+
+<button class="back-btn" onclick="history.back()">⬅ Back</button>
+
+<h1>Contact</h1>
+
+<div class="card">
+  <p><b>Email:</b> rahuljaat971115@gmail.com</p>
+  <p><b>Instagram:</b> @rahul__rk__6375</p>
+</div>
+
+</div>
+</body>
+</html>

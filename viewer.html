@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opening PDF...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay">
+
+<h1>Opening Question Paper…</h1>
+<p>Please wait</p>
+
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const fileId = params.get("id");
+
+  if (fileId) {
+    const url =
+      "https://drive.google.com/file/d/" + fileId + "/view";
+    window.location.href = url;   // direct open
+  } else {
+    document.body.innerHTML = "<h2>No PDF Found</h2>";
+  }
+</script>
+
+</body>
+</html>

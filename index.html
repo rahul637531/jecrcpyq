@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JECRC PYQ – Semesters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay">
+
+<div class="top-bar">
+  
+     <button class="copy-btn" onclick="copyLink()">📋 Copy Link</button>
+
+  <div class="profile" onclick="toggleProfile()">
+    <img src="me.jpeg">
+    <span>Made by Rahul</span>
+  </div>
+</div>
+
+
+<div id="profileCard" class="profile-card">
+  <h3>Rahul</h3>
+  <p><a target="_blank" href="https://instagram.com/rahul__rk__6375">Instagram</a></p>
+  <p><a target="_blank" href="https://linkedin.com/in/YOUR_ID">LinkedIn</a></p>
+</div>
+
+<h1>Select Semester</h1>
+
+<!-- Available semesters -->
+<div class="card">
+  <a href="subjects.html?sem=1">Semester 1</a>
+</div>
+
+<div class="card">
+  <a href="subjects.html?sem=2">Semester 2</a>
+</div>
+
+<div class="card">
+  <a href="subjects.html?sem=3">Semester 3</a>
+</div>
+
+<div class="card">
+  <a href="subjects.html?sem=4">Semester 4</a>
+</div>
+
+<!-- Coming soon semesters -->
+<div class="card coming">Semester 5 – Coming Soon</div>
+<div class="card coming">Semester 6 – Coming Soon</div>
+<div class="card coming">Semester 7 – Coming Soon</div>
+<div class="card coming">Semester 8 – Coming Soon</div>
+</div>
+
+<script>
+function toggleProfile(){
+  const c=document.getElementById("profileCard");
+  c.style.display=c.style.display==="block"?"none":"block";
+}
+</script>
+<script>
+function copyLink() {
+  const btn = event.target;
+  navigator.clipboard.writeText(window.location.href);
+  btn.innerText = "✅ Copied";
+  setTimeout(() => {
+    btn.innerText = "📋 Copy Link";
+  }, 2000);
+}
+</script>
+</body>
+</html>
