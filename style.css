@@ -41,12 +41,12 @@ body {
   cursor:pointer;
 }
 .profile img{
-  width:40px;
-  height:40px;
+  width:80px;
+  height:80px;
   border-radius:50%;
 }
 .profile span{
-  font-size:13px;
+  font-size:20px;
   font-weight:bold;
 }
 
