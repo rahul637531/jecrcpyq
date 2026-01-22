@@ -7,10 +7,11 @@
 <body>
 <div class="overlay">
 
-<button class="back-btn" onclick="history.back()">⬅ Back</button>
+
 
 <h1 id="title"></h1>
 <div id="subjectList"></div>
+<button class="back-btn" onclick="history.back()">⬅ Back</button>
 
 <script>
 /* Get semester number */
@@ -52,8 +53,7 @@ const subjects = {
 };
 
 /* Set page title */
-document.getElementById("title").innerText =
-  "Semester " + sem + " Subjects";
+document.getElementById("title").innerText ="📖 SUBJECTS";
 
 /* Show only selected semester subjects */
 const list = document.getElementById("subjectList");
