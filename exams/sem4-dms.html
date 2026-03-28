@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>semester 4 - dms</title>
+  <title>semester 4 - dbms</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -9,7 +9,7 @@
 
 
 
-<h1>Discrete Mathematics</h1>
+<h1>Database Management System</h1>
 
 <!-- ===== YEAR 2024 ===== -->
 <h2 class="year-title">📘 2024</h2>
@@ -36,19 +36,19 @@
 <h2 class="year-title">📗 2025</h2>
 
 <div class="card">
-  <a href="../viewer.html?id=1WkAIUq0iY4XLAkJT9FRSjqE6hGrBU9PM">
+  <a href="../viewer.html?id=1OhCBjqrOT2dY87ZtWzNReK68sGFbUjLN">
     Insem 1
   </a>
 </div>
 
 <div class="card">
-  <a href="../viewer.html?id=1g9yDmxpkCOOtPdrYpnNH0B4KjeQQ3N50">
+  <a href="../viewer.html?id=1hKtlPIl8rwU8wAcErPMe7He2ih-8mSvI">
     Insem 2
   </a>
 </div>
 
 <div class="card">
-  <a href="../viewer.html?id=10v2Qvimm82HC5s0kuGYHzT1y_dA3DrUP">
+  <a href="../viewer.html?id=1bJ-uggmDlMNswH39652R_R1N0wEF3sQ1">
     End Semester
   </a>
 </div>
@@ -63,6 +63,29 @@
 </div>
 
 <div class="card">
+  <a href="PASTE_2026_INSEM2_LINK">
+    Insem 2
+  </a>
+</div>
+
+<div class="card">
+  <a href="PASTE_2026_ENDSEM_LINK">
+    End Semester
+  </a>
+</div>
+  <button class="back-btn" onclick="history.back()">⬅ Back</button>
+<script>
+const params = new URLSearchParams(window.location.search);
+const sem = params.get("sem");
+const sub = params.get("sub");
+
+document.getElementById("heading").innerText =
+  "Semester " + sem + " – " + sub;
+</script>
+
+</div>
+</body>
+</html>
   <a href="PASTE_2026_INSEM2_LINK">
     Insem 2
   </a>
